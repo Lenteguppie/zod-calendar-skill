@@ -1,22 +1,21 @@
 
 skillMetadata:
   sections:
-    - name: Options << Name of section
+    - name: Google Authentication
       fields:
-        - name: internal_python_variable_name
-          type: text
-          label: Setting Friendly Display Name
+        - name: CalendarEmail
+          type: email
+          label: Email
           value: ""
-          placeholder: demo prompt in the input box
-    - name: Login << Name of another section
+          placeholder: test@tester.com
+    - name: ZOD-API
       fields:
         - type: label
-          label: Just a little bit of extra info for the user to understand following settings
-        - name: username
+          label: The required API key for ZOD-Cloud
+        - name: zod-key
           type: text
-          label: Username
+          label: API-key
           value: ""
-        - name: password
-          type: password
-          label: Password
-          value: ""
+        - type: button
+          
+

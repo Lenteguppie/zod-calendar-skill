@@ -4,7 +4,7 @@ import requests
 
 class ZodCalendar(MycroftSkill):
     def __init__(self):
-        self.url="localhost:8080/calendar"
+        self.url="localhost:8000/calendar"
         MycroftSkill.__init__(self)
 
     @intent_file_handler('today.calendar.zod.intent')

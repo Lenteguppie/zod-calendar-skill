@@ -4,10 +4,13 @@ import requests
 
 class ZodCalendar(MycroftSkill):
     def __init__(self):
-        self.initialize()
+        super(ZodCalendar, self).__init__()
+
+    def initialize(self):
         self.url="localhost:8000/calendar"
-        self.email = self.settings.get('CalendarEmail', False)
-        MycroftSkill.__init__(self)
+        self.settings_change_callback = self.on_settings_changed
+        self.on_settings_changed()
+
 
     def initialize(self):
         self.settings_change_callback = self.on_settings_changed

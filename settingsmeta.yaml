@@ -4,7 +4,7 @@ skillMetadata:
     - name: Google Authentication
       fields:
         - name: CalendarEmail
-          type: email
+          type: text
           label: Email
           value: ""
           placeholder: test@tester.com

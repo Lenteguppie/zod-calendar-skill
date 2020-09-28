@@ -24,8 +24,9 @@ class ZodCalendar(MycroftSkill):
         post_data = {'action': 'events_today', 'email':self.email}
         x = requests.post(self.url, data = post_data)
         events = self.today_appointments_constructor(x)
+        print (events)
         self.speak(events)
-        self.speak_dialog('calendar.zod')
+        # self.speak_dialog('calendar.zod')
 
     @intent_file_handler('insert.calendar.zod.intent')
     def handle_calendar_zod(self, message):

@@ -2,10 +2,10 @@
 skillMetadata:
   sections:
     - name: Google-Authentication
-        fields:
+        fields: 
           - name: CalendarEmail
             type: email
             label: Enter your email address
-            value:
+            value: 
           
 

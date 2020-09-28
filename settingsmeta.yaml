@@ -2,21 +2,10 @@
 skillMetadata:
   sections:
     - name: Google-Authentication
-      fields:
-        - type: label
-          label: Google Calendar email address
-        - name: CalendarEmail
-          type: text
-          value: ""
-          placeholder: test@tester.com
-    - name: ZOD-API
-      fields:
-        - type: label
-          label: The required API key for ZOD-Cloud
-        - name: zod-key
-          type: text
-          label: API-key
-          value: ""
-        - type: button
+        fields:
+          - name: CalendarEmail
+            type: email
+            label: Enter your email address
+            value:
           
 

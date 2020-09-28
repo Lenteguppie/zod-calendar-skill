@@ -7,7 +7,7 @@ class ZodCalendar(MycroftSkill):
         super(ZodCalendar, self).__init__()
 
     def initialize(self):
-        self.url="localhost:8000/calendar"
+        self.url="192.168.86.58:8000/calendar"
         self.settings_change_callback = self.on_settings_changed
         self.on_settings_changed()
 
